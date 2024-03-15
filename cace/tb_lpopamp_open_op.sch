@@ -70,8 +70,6 @@ value=\{xcl\}}
 C {devices/lab_pin.sym} 700 -440 0 1 {name=lcm3 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 180 -520 0 0 {name=lip1 sig_type=std_logic lab=ip}
 C {devices/code_shown.sym} 80 -830 0 0 {name=header only_toplevel=false value="
-* Include SkyWater sky130 device models
-.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
 .param mc_mm_switch=0
 .temp 25
 "
@@ -96,3 +94,12 @@ C {devices/code_shown.sym} 780 -830 0 0 {name=params only_toplevel=false value="
 "}
 C {devices/vsource.sym} 220 -450 0 0 {name=v_ip value="dc xvin"}
 C {devices/lab_pin.sym} 180 -400 0 0 {name=lavss3 sig_type=std_logic lab=avss}
+C {devices/code.sym} 70 -920 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+
+"
+spice_ignore=false}
