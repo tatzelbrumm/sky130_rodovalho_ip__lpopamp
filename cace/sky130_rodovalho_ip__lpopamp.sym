@@ -1,6 +1,6 @@
 v {xschem version=2.9.9 file_version=1.2 }
 G {}
-K {type=subcircuit
+K {type=primitive
 format="@name @@im @@ip @@o @@avdd @@avss @@en @@enb @@ibias @symname"
 template="name=X1"}
 V {}
