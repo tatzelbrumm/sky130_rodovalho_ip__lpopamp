@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -94,7 +95,7 @@ C {devices/code_shown.sym} 780 -830 0 0 {name=params only_toplevel=false value="
 "}
 C {devices/vsource.sym} 220 -450 0 0 {name=v_ip value="dc xvin"}
 C {devices/lab_pin.sym} 180 -400 0 0 {name=lavss3 sig_type=std_logic lab=avss}
-C {devices/code.sym} 70 -920 0 0 {name=TT_MODELS
+C {devices/code.sym} 70 -700 0 0 {name=TT_MODELS
 only_toplevel=true
 format="tcleval( @value )"
 value="
