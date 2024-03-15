@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -107,8 +108,6 @@ C {devices/vsource.sym} 400 -150 0 0 {name=v_cm value="\{xcm\}"}
 C {devices/lab_pin.sym} 480 -200 0 1 {name=lcm0 sig_type=std_logic lab=cm}
 C {devices/lab_pin.sym} 480 -100 0 1 {name=lavss4 sig_type=std_logic lab=avss}
 C {devices/code_shown.sym} 80 -1010 0 0 {name=header only_toplevel=false value="
-* Include SkyWater sky130 device models
-.lib "/usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice" tt
 .param mc_mm_switch=0
 "
 }
@@ -152,3 +151,12 @@ C {devices/code_shown.sym} 620 -1010 0 0 {name=params only_toplevel=false value=
 .param xcl    = 1T
 .param xrl    = 1T
 "}
+C {devices/code.sym} 70 -840 0 0 {name=TT_MODELS
+only_toplevel=true
+format="tcleval( @value )"
+value="
+** opencircuitdesign pdks install
+.lib $::SKYWATER_MODELS/sky130.lib.spice tt
+
+"
+spice_ignore=false}
