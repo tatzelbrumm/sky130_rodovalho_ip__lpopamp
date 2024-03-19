@@ -2,13 +2,13 @@
 
 IP Block name:		Low power operational amplifier
 Designer/Design Team:	Luis Henrique Rodovalho
-Email address(es):		luishenriquerodovalho@gmail.com
 Date:				March 1, 2024
 
 ## Circuit description:
 The proposed circuit is a rail-to-rail input/output class AB general purpose amplifier designed for SkyWater 130 nm process technology. The circuit should performance should pass the specifications shown in the following table:
 
 | Parameter | Min | Typical | Max | Unit| Notes |
+| --- | --- | --- | --- | --- | --- | --- |
 | Operating Temperature | -40 | 25 | 85 | °C | |
 | Load Resistance | 5 | | | kOhm | |
 | Load Capacitance | | | 30 | pF | |
@@ -33,6 +33,7 @@ The proposed circuit is a rail-to-rail input/output class AB general purpose amp
 ## Circuit pinout:
 
 | Pinout | Pin name | Use |
+| --- | --- | --- |
 | avdd | analog power | 3.3-5.5V |
 | dvdd | digital power | 1.8V |
 | avss | analog ground | |
