@@ -7,26 +7,26 @@ Date:				March 1, 2024
 ## Circuit description:
 The proposed circuit is a rail-to-rail input/output class AB general purpose amplifier designed for SkyWater 130 nm process technology. The circuit should performance should pass the specifications shown in the following table:
 
-| Parameter | Min | Typical | Max | Unit| Notes |
-| --- | --- | --- | --- | --- | --- | --- |
-| Operating Temperature | -40 | 25 | 85 | °C | |
-| Load Resistance | 5 | | | kOhm | |
-| Load Capacitance | | | 30 | pF | |
-| Total Harmonic Distortion | | 0.1 | 0.5 | % | At nominal output power |
-| Signal-to-Noise Ratio | 90 | 100 | 110 | dB | |
-| Output Voltage Swing | 100 | | avdd - 100 | mV |At 5 kOhms maximum load |
-| Output Voltage Swing | 10 | | avdd - 10 | mV | At 50 kOhms load |
-| Power Consumption (Enabled) | | | 1.8 | mA | At 5 kOhms maximum load |
-| Power Consumption (No load) | | | 300 | uA | |
-| Power Consumption (Disabled) | | 1 | 10 | nA | |
-| PSRR (Power Supply Rejection Ratio) | 70 | 80 | | dB | |
-| CMRR (Common mode Rejection Ratio) | 80 | | | dB | |
-| Gain Bandwidth Product | | 2.5 | | MHz | |
-| Open loop gain | | 100 | | dB | |
-| Phase margin | | 70 | | ° | |
-| Wakeup time (ena transition 0 to 1) | | 600 | | ns | |
-| Common-mode input voltage | 0 | | avdd | V | Rail-to-rail operation |
-| Equivalent Input Noise | | | 30 | nV/√Hz | At 4kOhms maximum load, measured at 10kHz |
+| Parameter                           | Min | Typical | Max        | Unit   | Notes |
+| ----------------------------------- | --- | ------- | ---------- | ------ | ----- |
+| Operating Temperature               | -40 |      25 |         85 |     °C |.      |
+| Load Resistance                     |.  5 |.        |            |   kOhm |.      |
+| Load Capacitance                    |.    |         |         30 |     pF |       |
+| Total Harmonic Distortion.          |     |     0.1 |        0.5 |      % | At nominal output power |
+| Signal-to-Noise Ratio               |  90 |     100 |.       110 |.    dB | |
+| Output Voltage Swing                | 100 |.        | avdd - 100 |     mV |At 5 kOhms maximum load |
+| Output Voltage Swing.               |  10 |         |  avdd - 10 |     mV | At 50 kOhms load |
+| Power Consumption (Enabled)         |     |         |.       1.8 |     mA | At 5 kOhms maximum load |
+| Power Consumption (No load)         |     |         |        300 |     uA | |
+| Power Consumption (Disabled).       |     |       1 |.        10 |     nA | |
+| PSRR (Power Supply Rejection Ratio) |  70 |      80 |            |     dB | |
+| CMRR (Common mode Rejection Ratio)  |  80 |.        |.           |     dB | |
+| Gain Bandwidth Product.             |     |.    2.5 |.           |    MHz | |
+| Open loop gain                      |     |.    100 |.           |     dB | |
+| Phase margin                        |     |.     70 |.           |      ° | |
+| Wakeup time (ena transition 0 to 1) |     |     600 |.           |.    ns | |
+| Common-mode input voltage           |   0 |.        |.      avdd |      V | Rail-to-rail operation |
+| Equivalent Input Noise              |     |.        |.        30 | nV/√Hz | At 4kOhms maximum load, measured at 10kHz |
 
 
 
