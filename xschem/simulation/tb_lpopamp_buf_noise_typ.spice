@@ -22,6 +22,7 @@ CL out avss {xcl} m=1
   noise v(out) v_in dec 10 1 1G
   plot noise1.onoise_spectrum loglog
   print noise2.onoise_total
+  wrdata tb_lpopamp_buf_noise_typ.data inoise_total onoise_total
 .endc
 
 
