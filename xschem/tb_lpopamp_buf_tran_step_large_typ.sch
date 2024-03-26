@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -117,6 +118,7 @@ C {devices/code_shown.sym} 960 -1030 0 0 {name=control only_toplevel=false value
 
   print slewrp slewrm slewr
 
+  write tb_lpopamp_buf_tran_step_large_typ.raw
 .endc
 "}
 C {devices/code_shown.sym} 640 -1030 0 0 {name=params only_toplevel=false value="
