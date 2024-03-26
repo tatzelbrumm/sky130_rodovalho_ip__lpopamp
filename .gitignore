@@ -1,10 +1,10 @@
-cace/*.spice
-cace/xschemrc
-netlist/*
-xschem/xschemrc
-xschem/*.spice
+# cace/*.spice
+# cace/xschemrc
+# netlist/*
+# xschem/xschemrc
+# xschem/*.spice
 mag/*.ext
 mag/*.res.ext
 mag/*.nodes
 mag/*.sim
-.spiceinit
+# .spiceinit
