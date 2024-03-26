@@ -109,7 +109,7 @@ C {devices/code_shown.sym} 1000 -1070 0 0 {name=control only_toplevel=false valu
   alter v_avdd ac=0
 
   op
-  wrnodev tb_lpopamp_open_ac_typ.op.raw
+  wrnodev tb_lpopamp_open_ac_typ.op
 
   ac dec 10 10m 10G
 
