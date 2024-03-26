@@ -88,5 +88,47 @@ cmrr0p1hz           =  1.223346e+02
 psrr0p1hz           =  6.880178e+01
 idd = -2.88393e-04
 binary raw file "tb_lpopamp_open_ac_typ.raw"
+ngspice 47 -> source tb_lpopamp_open_ac_typ.spice
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_rodovalho_ip__lpopamp/xschem/tb_lpopamp_open_ac_typ.sch
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+ Reference value :  0.00000e+00
+No. of Data Rows : 1
+
+Node data saved to file tb_lpopamp_open_ac_typ.op
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+ Reference value :  3.98107e+07
+No. of Data Rows : 121
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+ Reference value :  7.94328e+07
+No. of Data Rows : 121
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+Note: Starting dynamic gmin stepping
+Note: Dynamic gmin stepping completed
+ Reference value :  7.94328e+06
+No. of Data Rows : 121
+av0p1hz             =  1.119097e+02
+gbw                 =  2.327147e+06
+pm180               =  7.659362e+07
+pm                  =  6.166276e+01
+gm                  =  -4.837768e+01
+cmrr0p1hz           =  1.223346e+02
+psrr0p1hz           =  6.880178e+01
+idd = -2.88393e-04
+binary raw file "tb_lpopamp_open_ac_typ.raw"
 
 
