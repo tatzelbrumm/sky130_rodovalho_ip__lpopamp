@@ -1,0 +1,1 @@
+../xschem/p1_2.sch

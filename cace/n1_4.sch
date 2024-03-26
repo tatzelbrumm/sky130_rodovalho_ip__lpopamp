@@ -1,0 +1,1 @@
+../xschem/n1_4.sch

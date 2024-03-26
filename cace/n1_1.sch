@@ -1,0 +1,1 @@
+../xschem/n1_1.sch
