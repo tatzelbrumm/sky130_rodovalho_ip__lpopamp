@@ -1,0 +1,45 @@
+******
+** ngspice-42 : Circuit level simulation program
+** Compiled with Sparse Direct Linear Solver
+** The U. C. Berkeley CAD Group
+** Copyright 1985-1994, Regents of the University of California.
+** Copyright 2001-2023, The ngspice team.
+** Please get your ngspice manual from https://ngspice.sourceforge.io/docs.html
+** Please file your bug-reports at http://ngspice.sourceforge.net/bugrep.html
+** Creation Date: Sun Mar 10 02:59:47 UTC 2024
+******
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_rodovalho_ip__lpopamp/xschem/tb_lpopamp_open_dc_typ.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Note: True gmin stepping completed
+ Reference value :  2.00000e-04
+No. of Data Rows : 1001
+ngspice 45 -> source simulation/tb_lpopamp_open_dc_typ.spice
+Command 'source' failed:
+simulation/tb_lpopamp_open_dc_typ.spice: No such file or directory
+    Simulation interrupted due to error!
+
+ngspice 1 -> source tb_lpopamp_open_dc_typ.spice
+
+Note: No compatibility mode selected!
+
+Circuit: ** sch_path: /home/cmaier/eda/efabless/chipalooza2024/sky130_rodovalho_ip__lpopamp/xschem/tb_lpopamp_open_dc_typ.sch
+
+Doing analysis at TEMP = 27.000000 and TNOM = 27.000000
+
+Note: Starting dynamic gmin stepping
+Warning: Dynamic gmin stepping failed
+Note: Starting true gmin stepping
+Note: True gmin stepping completed
+ Reference value :  1.99200e-04
+No. of Data Rows : 1001
+binary raw file "tb_lpopamp_open_dc_typ.raw"
+ngspice 2 -> 
