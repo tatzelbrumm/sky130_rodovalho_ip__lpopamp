@@ -1,0 +1,12 @@
+/usr/lib/python3/dist-packages/requests/__init__.py:89: RequestsDependencyWarning: urllib3 (2.2.1) or chardet (3.0.4) doesn't match a supported version!
+  warnings.warn("urllib3 ({}) or chardet ({}) doesn't match a supported "
+Traceback (most recent call last):
+  File "/home/cmaier/.local/bin/cace", line 8, in <module>
+    sys.exit(cli())
+  File "/home/cmaier/.local/lib/python3.8/site-packages/cace/cace_cli.py", line 692, in cli
+    charresult = cace_run(dataset, paramname)
+  File "/home/cmaier/.local/lib/python3.8/site-packages/cace/cace_cli.py", line 469, in cace_run
+    cace_run_all_pparams(datasheet)
+  File "/home/cmaier/.local/lib/python3.8/site-packages/cace/cace_cli.py", line 293, in cace_run_all_pparams
+    for pparam in datasheet['physical_parameters']:
+KeyError: 'physical_parameters'

@@ -1,0 +1,21 @@
+Checking for out-of-date schematic-captured netlists.
+Checking for out-of-date testbench netlist tb_lpopamp_open_op.spice.
+Evaluating electrical parameter idd
+Pins in schematic: ['avdd', 'avss', 'ip', 'im', 'o', 'ibias', 'en', 'enb']
+Pins in datasheet: ena inm inp out vdd vss 
+File ./netlist/schematic/sky130_rodovalho_ip__lpopamp.spice subcircuit sky130_rodovalho_ip__lpopamp does not have expected pins!
+Error:  Unknown/unhandled condition name "xcl"
+Warning: Variable {xcl} had no substitution
+Launching Simulations
+Total files to simulate: 1
+Running: ngspice  ngspice/idd_1.spice
+Current working directory is: /home/cmaier/EDA/efabless/chipalooza2024/sky130_rodovalho_ip__lpopamp
+Error: unknown subckt: xdut out ip out avdd avss en enb ibias sky130_rodovalho_ip__lpopamp
+    Simulation interrupted due to error!
+ngspice encountered an error. . . ending.
+
+Error:  ngspice exited with non-zero status!
+Error:  No output file ngspice/idd_1.data from simulation!
+Files to simulate method idd: 1
+Completed 0 of 1 simulations
+Collating results
