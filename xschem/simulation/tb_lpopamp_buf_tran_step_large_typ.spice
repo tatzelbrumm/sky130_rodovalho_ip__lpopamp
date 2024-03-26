@@ -13,8 +13,6 @@ RL out out_ {xrl} m=1
 **** begin user architecture code
 
 
-* Include SkyWater sky130 device models
-.lib /usr/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .param mc_mm_switch=0
 .temp 25
 
@@ -48,6 +46,7 @@ RL out out_ {xrl} m=1
 
   print slewrp slewrm slewr
 
+  write tb_lpopamp_buf_tran_step_large_typ.raw
 .endc
 
 
@@ -75,6 +74,11 @@ RL out out_ {xrl} m=1
 .param xtdel = {xper/4}
 .param xtr   = {xper/1000}
 .param xpw   = {xper/2-xtr}
+
+
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
 
 
 **** end user architecture code
