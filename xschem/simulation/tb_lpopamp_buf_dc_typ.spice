@@ -33,6 +33,7 @@ RL out out_ {xrl} m=1
   plot vo
   plot av
   plot dv
+  write tb_lpopamp_buf_dc_typ.raw
 .endc
 
 
