@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -117,6 +118,8 @@ C {devices/code_shown.sym} 960 -1030 0 0 {name=control only_toplevel=false value
   let root_sum_mag_square = sqrt(sum_mag_square)
   let thd = root_sum_mag_square / fourier11[1][1] * 100
   print thd
+
+  write tb_lpopamp_buf_tran_sine_typ.raw
 .endc
 "}
 C {devices/code_shown.sym} 640 -1030 0 0 {name=params only_toplevel=false value="
