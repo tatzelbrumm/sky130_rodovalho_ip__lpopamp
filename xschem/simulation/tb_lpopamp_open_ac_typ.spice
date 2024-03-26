@@ -15,8 +15,6 @@ v_ip ip avss dc {xavdd/2}
 **** begin user architecture code
 
 
-* Include SkyWater sky130 device models
-.lib /usr/local/share/pdk/sky130A/libs.tech/ngspice/sky130.lib.spice tt
 .param mc_mm_switch=0
 .temp 25
 
@@ -32,6 +30,8 @@ v_ip ip avss dc {xavdd/2}
   alter v_avdd ac=0
 
   op
+  wrnodev tb_lpopamp_open_ac_typ.op.raw
+
   ac dec 10 10m 10G
 
   * common-mode input
@@ -66,6 +66,7 @@ v_ip ip avss dc {xavdd/2}
   plot av cmrr psrr
   plot ph
   print idd
+  write tb_lpopamp_open_ac_typ.raw
 .endc
 
 
@@ -93,6 +94,11 @@ v_ip ip avss dc {xavdd/2}
 .param xrf    = 1f
 .param xcl    = 30p
 .param xrl    = 5k
+
+
+
+** opencircuitdesign pdks install
+.lib /usr/local/share/pdk/sky130A/libs.tech/combined/sky130.lib.spice tt
 
 
 **** end user architecture code
