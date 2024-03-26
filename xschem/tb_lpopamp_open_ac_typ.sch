@@ -94,12 +94,12 @@ C {devices/vsource.sym} 480 -150 0 0 {name=v_cm value="\{xcm\}"}
 C {devices/lab_pin.sym} 560 -200 0 1 {name=lcm0 sig_type=std_logic lab=cm}
 C {devices/lab_pin.sym} 560 -100 0 1 {name=lavss4 sig_type=std_logic lab=avss}
 C {devices/lab_pin.sym} 320 -580 0 0 {name=lim_ sig_type=std_logic lab=im_}
-C {devices/code_shown.sym} 80 -1010 0 0 {name=header only_toplevel=false value="
+C {devices/code_shown.sym} 80 -1070 0 0 {name=header only_toplevel=false value="
 .param mc_mm_switch=0
 .temp 25
 "
 }
-C {devices/code_shown.sym} 1000 -1010 0 0 {name=control only_toplevel=false value="
+C {devices/code_shown.sym} 1000 -1070 0 0 {name=control only_toplevel=false value="
 .option gmin=1e-12
 .option rshunt=1e12
 .control
@@ -109,6 +109,8 @@ C {devices/code_shown.sym} 1000 -1010 0 0 {name=control only_toplevel=false valu
   alter v_avdd ac=0
 
   op
+  wrnodev tb_lpopamp_open_ac_typ.op.raw
+
   ac dec 10 10m 10G
 
   * common-mode input
@@ -143,9 +145,10 @@ C {devices/code_shown.sym} 1000 -1010 0 0 {name=control only_toplevel=false valu
   plot av cmrr psrr
   plot ph
   print idd
+  write tb_lpopamp_open_ac_typ.raw
 .endc
 "}
-C {devices/code_shown.sym} 780 -1010 0 0 {name=params only_toplevel=false value="
+C {devices/code_shown.sym} 780 -1070 0 0 {name=params only_toplevel=false value="
 .param xavdd  = 3.3
 .param xavss  = 0
 .param xcm    = 1.65
