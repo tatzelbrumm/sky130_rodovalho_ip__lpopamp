@@ -125,6 +125,7 @@ C {devices/code_shown.sym} 900 -1010 0 0 {name=control only_toplevel=false value
   let av = db(abs(deriv(vo)/deriv(vi)))
   plot vo vs vi
   plot av vs vo
+  write tb_lpopamp_open_dc_typ.raw
 .endc
 "}
 C {devices/code_shown.sym} 620 -1010 0 0 {name=params only_toplevel=false value="
