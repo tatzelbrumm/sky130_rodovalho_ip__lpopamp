@@ -3,6 +3,7 @@
 # netlist/*
 # xschem/xschemrc
 # xschem/*.spice
+*.raw
 mag/*.ext
 mag/*.res.ext
 mag/*.nodes
