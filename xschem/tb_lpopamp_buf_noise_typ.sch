@@ -1,4 +1,5 @@
-v {xschem version=2.9.9 file_version=1.2 }
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
@@ -84,6 +85,7 @@ C {devices/code_shown.sym} 900 -950 0 0 {name=control only_toplevel=false value=
   noise v(out) v_in dec 10 1 1G
   plot noise1.onoise_spectrum loglog
   print noise2.onoise_total
+  wrdata tb_lpopamp_buf_noise_typ.data inoise_total onoise_total
 .endc
 "}
 C {devices/code_shown.sym} 620 -950 0 0 {name=params only_toplevel=false value="
